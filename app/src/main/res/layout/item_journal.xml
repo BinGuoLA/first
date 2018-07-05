@@ -1,0 +1,175 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="35dp"
+    app:cardCornerRadius="4dp"
+    >
+
+<LinearLayout
+android:id="@+id/item_ll"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingRight="10dp"
+android:background="@color/white"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10.8dp"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/main_iv_circle"
+        android:paddingTop="2dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/circle"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/journal_date"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingTop="1dp"
+        android:text="2017年01月18日"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#b0000000"
+    >
+
+    <LinearLayout
+        android:layout_width="23.3dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/linear_style"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/journal_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:paddingTop="3dp"
+                android:background="#ffffff"
+                android:id="@+id/main_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                />
+
+        </LinearLayout>
+
+        <!-- <TextView
+             android:paddingTop="2dp"
+             android:background="#ffffff"
+             android:id="@+id/main_tv_content"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:lineSpacingExtra="4dp"
+             android:paddingLeft="33dp"
+             android:paddingRight="15dp"
+             android:text="         在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里 写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么在这里写些什么"
+             android:textColor="@color/black"
+             android:textSize="16sp"
+             /> -->
+
+        <RelativeLayout
+            android:id="@+id/item_rl_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingRight="5dp"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:id="@+id/position_img"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/position"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25px"
+                />
+
+            <TextView
+                android:id="@+id/position_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25px"
+                android:layout_toRightOf="@+id/position_img"
+                android:text="桂林雁山街道"
+                android:textSize="15sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/main_iv_edit"
+                android:layout_width="25dp"
+                android:src="@drawable/edit1"
+                android:layout_centerInParent="false"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:baselineAlignBottom="false" />
+
+            <ImageView
+                android:id="@+id/main_iv_collect"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/collect"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/main_iv_edit"
+                android:layout_marginRight="15dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>
+
+
